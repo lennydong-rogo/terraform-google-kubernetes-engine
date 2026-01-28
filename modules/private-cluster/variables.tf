@@ -1009,3 +1009,9 @@ variable "ip_endpoints_enabled" {
   type        = bool
   default     = null
 }
+
+variable "exclude_ai_zones" {
+  description = "(Optional) Controls whether to exclude AI zones from the dynamically fetched google_compute_zones"
+  type        = bool
+  default     = false
+}
